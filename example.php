@@ -3,8 +3,8 @@
 function calculateOffer($ticketWant,$ticketPricePer){
 
 //offer rule
-$offerBuy = 7;
-$offerGet = 3;
+$offerBuy = 2;
+$offerGet = 1;
 
 //check for offer is applicable or not
 if($offerBuy > $ticketWant){
@@ -36,7 +36,7 @@ for ($i = 1; $i <= $ticketWant; $i++)
     return 'Congratulation, You got '.$freeTickets.' free tickets on buying '.$ticketWant.' tickets of worth Rs.'.$calPaidTickets;
 }
 
-$ticketWant = 10;
+$ticketWant = 2;
 $ticketPricePer = 300;
 echo calculateOffer($ticketWant, $ticketPricePer);
 ?>
